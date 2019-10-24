@@ -1,40 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Element : MonoBehaviour
 {
 
-    public bool mine;
-    public Sprite[] emptyTextures;
-    public Sprite mineTexture;
+    public bool isMine;
+    public List<Sprite> tiles;
+
+    public Sprite mineSprite;
 
     void Start()
     {
-        mine = Random.value < 0.15;
+        isMine = Random.value < 0.15;
 
-        int x = (int)transform.position.x;
-        int y = (int)transform.position.y;
-        Grid.elements[x, y] = this;
+        // int x = (int)transform.position.x;
+        // int y = (int)transform.position.y;
+        // TileGrid.elements[x, y] = this;
     }
 
-    public void loadTexture(int adjacentCount)
+    public void LoadTexture(int adjacentCount)
     {
-        if (mine)
-            GetComponent<SpriteRenderer>().sprite = mineTexture;
+        if (isMine)
+            GetComponent<SpriteRenderer>().sprite = mineSprite;
         else
-            GetComponent<SpriteRenderer>().sprite = emptyTextures[adjacentCount];
+            GetComponent<SpriteRenderer>().sprite = tiles[adjacentCount];
     }
 
     void OnMouseUpAsButton()
     {
-        if (mine)
+        if (isMine)
         {
-            Grid.uncoverMines();
+            // TileGrid.uncoverMines();
 
-            print("Game...Over!");
+            LoadTexture(2);
+            Debug.Log("Game...Over!");
         }
         else
         {
+            Debug.Log("show blocks now");
             // TODO: show mine numbers
         }
 

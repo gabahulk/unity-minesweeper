@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7715780167107063644}
   - component: {fileID: 3366049229444012493}
+  - component: {fileID: 8511701279765275699}
+  - component: {fileID: -9010911232887058549}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -56,7 +58,6 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -80,3 +81,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8511701279765275699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586443324403352289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ac686e6127d69499f14a972d388816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMine: 0
+  tiles:
+  - {fileID: 21300000, guid: eb0a473f9c6bb8d41876bc30193e84b0, type: 3}
+  - {fileID: 21300000, guid: 718c178b3c54d0848a4164fad01b5f37, type: 3}
+  - {fileID: 21300000, guid: 0d2075cb7d0299e4c9e5e06083407361, type: 3}
+  - {fileID: 21300000, guid: 5708a2ff988eb4f4ab2d20754cddd500, type: 3}
+  - {fileID: 21300000, guid: 9cfe85e5615a00f4086f6521f20f359d, type: 3}
+  - {fileID: 21300000, guid: b2975ae03b6fce94288dfbffec2aed7e, type: 3}
+  - {fileID: 21300000, guid: 666d481b7354c9f4d937a52e786785b9, type: 3}
+  - {fileID: 21300000, guid: 0ab44eb86e920ef42b546876f1d07712, type: 3}
+  - {fileID: 21300000, guid: 93e73d707fa0a6a44aad48136e264c21, type: 3}
+  mineSprite: {fileID: 21300000, guid: 5e96de727e4b62a45b69ff7ecf28e0ea, type: 3}
+--- !u!61 &-9010911232887058549
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586443324403352289}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

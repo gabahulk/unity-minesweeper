@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7715780167107063644}
   - component: {fileID: 3366049229444012493}
-  - component: {fileID: 8511701279765275699}
   - component: {fileID: -9010911232887058549}
+  - component: {fileID: 6177228117863096009}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -58,6 +58,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 00dfc56c50fb20b42bdd45d9d799062a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -78,33 +79,9 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8511701279765275699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586443324403352289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12ac686e6127d69499f14a972d388816, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMine: 0
-  tiles:
-  - {fileID: 21300000, guid: eb0a473f9c6bb8d41876bc30193e84b0, type: 3}
-  - {fileID: 21300000, guid: 718c178b3c54d0848a4164fad01b5f37, type: 3}
-  - {fileID: 21300000, guid: 0d2075cb7d0299e4c9e5e06083407361, type: 3}
-  - {fileID: 21300000, guid: 5708a2ff988eb4f4ab2d20754cddd500, type: 3}
-  - {fileID: 21300000, guid: 9cfe85e5615a00f4086f6521f20f359d, type: 3}
-  - {fileID: 21300000, guid: b2975ae03b6fce94288dfbffec2aed7e, type: 3}
-  - {fileID: 21300000, guid: 666d481b7354c9f4d937a52e786785b9, type: 3}
-  - {fileID: 21300000, guid: 0ab44eb86e920ef42b546876f1d07712, type: 3}
-  - {fileID: 21300000, guid: 93e73d707fa0a6a44aad48136e264c21, type: 3}
-  mineSprite: {fileID: 21300000, guid: 5e96de727e4b62a45b69ff7ecf28e0ea, type: 3}
 --- !u!61 &-9010911232887058549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131,3 +108,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6177228117863096009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586443324403352289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5fa6b23cbe66944a509e4eec117dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileInfo: {fileID: 11400000, guid: f3805debdd5bcb041b76e3ab63a35f9c, type: 2}
